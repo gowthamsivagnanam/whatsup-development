@@ -133,4 +133,5 @@ public class EvenOddCheck {
         sc.close(); // close the scanner
     }
 }
+11.hidden comments 
 
