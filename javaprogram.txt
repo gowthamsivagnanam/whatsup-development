@@ -1,0 +1,136 @@
+1.WAP print 1 to 10 using for loop.
+
+public class PrintNumbers {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+    }
+}
+
+
+2.WAP print even number range 50 to 100 using for loop.
+
+public class EvenNumbers {
+    public static void main(String[] args) {
+        for (int i = 50; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+3.WAP to print 1st 17 later in English Lowercase Alphabet.
+public class First17Letters {
+    public static void main(String[] args) {
+        for (char ch = 'a'; ch < 'a' + 17; ch++) {
+            System.out.println(ch);
+        }
+    }
+}
+
+4.WAP to print below format using nested for loop.
+
+5.WAP to Print
+         1 1 1 1
+         2 2 2 2
+         3 3 3 3
+         4 4 4 4
+public class NumberPattern {
+    public static void main(String[] args) {
+        int n = 4; // number of rows and columns
+
+        for (int i = 1; i <= n; i++) { 
+            for (int j = 1; j <= n; j++) { 
+                System.out.print(i + " ");
+            }
+            System.out.println();         }
+    }
+}
+6.WAP  to print
+        1 2 3 4
+        1 2 3 4
+        1 2 3 4
+        1 2 3 4
+public class NumberPattern {
+    public static void main(String[] args) {
+        int n = 4; 
+        for (int i = 1; i <= n; i++) { 
+            for (int j = 1; j <= n; j++) { 
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+7.WAP to print
+        4 4 4 4
+        3 3 3 3
+        2 2 2 2
+        1 1 1 1
+public class NumberPattern {
+    public static void main(String[] args) {
+        int n = 4; 
+
+        for (int i = n; i >= 1; i--) { 
+            for (int j = 1; j <= n; j++) { 
+                System.out.print(i + " ");    
+        }
+            System.out.println();       
+ }
+    }
+}
+8.WAP to print
+      4 3 2 1
+      4 3 2 1
+      4 3 2 1
+      4 3 2 1
+public class NumberPattern {
+    public static void main(String[] args) {
+        int n = 4; 
+        for (int i = 1; i <= n; i++) { 
+            for (int j = n; j >= 1; j--) { 
+                System.out.print(j + " ");
+            }
+            System.out.println(); 
+        }
+    }
+}
+9. WAP to Print
+        a b c d
+        e f g h
+        i  j  k  l
+       m n o p
+public class AlphabetPattern {
+    public static void main(String[] args) {
+        char ch = 'a'; 
+        int n = 4;
+        for (int i = 1; i <= n; i++) { 
+            for (int j = 1; j <= n; j++) { 
+                System.out.print(ch + " ");
+                ch++; 
+            }
+            System.out.println();
+        }
+    }
+}
+10.WAP to check Number is even or odd using user input (Scanner Class)
+import java.util.Scanner;
+
+public class EvenOddCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); 
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt(); 
+
+               if (num % 2 == 0) {
+            System.out.println(num + " is Even.");
+        } else {
+            System.out.println(num + " is Odd.");
+        }
+
+        sc.close(); // close the scanner
+    }
+}
+
